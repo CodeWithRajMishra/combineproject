@@ -3,7 +3,7 @@ import axios from "axios";
 const App=()=>{
 const [mydata, setMydata]=useState("");
 const laodData=()=>{
-  axios.get("http://localhost:8000/api").then((res)=>{
+  axios.get("https://combineproject-2w9z.vercel.app").then((res)=>{
       setMydata(res.data);
   })
 }
